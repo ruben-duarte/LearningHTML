@@ -26,4 +26,21 @@ nav ul {
     list-style-type: none;
     display: flex;
     gap: 4.1em;
+    margin: 0;
+}
+
+nav  ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6 rem;
+}
+
+nav ul li a.active:before {
+    position: absolute;
+    content: " ";
+    width: 1%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    top: 55px;
 }
